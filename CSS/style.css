@@ -41,14 +41,14 @@
 
 h2 {
     font-size: 1.999rem;
-    margin: 3rem 0 1rem 0; 
+    margin: 1rem 0 3rem 0; 
 }
 blockquote {
     font-style: italic;
     font-size: 1.999rem;
     color: rgb(52, 139, 77);
     hanging-punctuation: first;
-    text-indent: -0.7;
+    text-indent: 0;
 
 }
 
