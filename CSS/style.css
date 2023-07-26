@@ -15,9 +15,9 @@
     font-family: baskerville-urw, serif;
    }
 
-    section, header, footer {
+    section, header {
         width: 80%;
-        max-width: 700px;
+        max-width: 600px;
         margin: auto;
     
     }
@@ -65,9 +65,10 @@ blockquote {
     /*--styling links--*/
     a {
         color:rgb(83, 123, 94);
-        text decoration: none;
-
+        text-decoration: none;
+    
     }
+
     a:hover {
         color:rgb(44, 87, 56);
         border-bottom: 1px dotted;
@@ -109,6 +110,18 @@ nav ul {
     
 
     }
+    .gridimage {
+        display: grid;
+        column-gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .dark {
+        background: #333333;
+        padding: 3rem 0;
+        margin-top: -3.5rem;
+    }
+    
     /*--Styling table--*/
     table{
         margin:auto;
@@ -140,14 +153,19 @@ nav ul {
     /*--Images--*/
     img{
         display: block;
-        margin: 8rem 0 2rem 0;
+        margin: 2rem 0 2rem 0;
         padding: 0;
         max-width: 100%;
-
     }
+
+        .topimage {
+            margin: 0;
+        }
+
+    
     hr{
-        margin: 100px 0;
-        height: 1px;
+        margin: 50px 0;
+        height: 2px;
         background-color: rgb(69, 107, 79);
         color: rgb(121, 172, 135);
         border: 0 none;
@@ -202,4 +220,18 @@ nav ul {
       footer .connections a:hover svg path {
               fill:  #6fad74;
               transition: all 0.2s ease-in-out;}
-    
+
+      @media (max-width: 800px) {  
+      
+      
+            body {
+                background:#1b4022;
+                margin: auto 0;
+                font-size: 110%;
+
+            }
+            article{
+                width:90%
+            }
+            h1{ font-size: 3.5rem;}
+        } 
